@@ -282,7 +282,17 @@ A tag pode ser usado para criar uma versão, por exemplo
 git tag -a <tag> -m "<mensagem>"
 ```
 
+Para listar as tags, utilizar
+```
+git tag --list
+```
+
 Para apagar a tag, usa-se
 ```
 git tag -d <tag>
+```
+
+Para enviar uma tag para um servidor remoto, usar 
+```
+git push --tags
 ```
