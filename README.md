@@ -41,15 +41,15 @@ git commit -am "Para adicionar todos os arquivos e dar commit"
 
 ### Linhas
 
-**Verde**         - Linha adicionada
-**Azul**          - Linha modificada
-**Seta vermelha** - Linha apagada
+**Verde**         - Linha adicionada  
+**Azul**          - Linha modificada  
+**Seta vermelha** - Linha apagada  
 
 ### Arquivos
 
-**U** - Untracked (não foi adicionado ainda)
-**A** - Added (adicionado mas não commitado)
-**M** - Modified (commitado e modificado)
+**U** - Untracked (não foi adicionado ainda)  
+**A** - Added (adicionado mas não commitado)  
+**M** - Modified (commitado e modificado)  
 
 Para visualisar todos os tipos de formatação no markdown, acesse esse [link](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 
@@ -131,7 +131,7 @@ Para desfazer o commit e todas as alterações dos arquivos, utilizar
 git reset --hard <hash do commit anterior>
 ```
 
-# Repositório remoto
+## Repositório remoto
 
 Para linkar com um repositório do GitHub, basta usar os seguintes comandos
 ```
@@ -164,3 +164,15 @@ git clone <endereço do repositório> <diretório alvo>
 O fork serve para trabalhar em um repositório de outra pessoa ou organização e depois enviar um pull request
 
 Para isso deve-se acessar o repositório e clicar no botão fork
+
+## Branchs
+
+Para criar um branch, utiliza-se
+```
+git checkout -b <nome do branch>
+```
+
+Para verificar os branchs existentes, usar
+```
+git branch
+```
