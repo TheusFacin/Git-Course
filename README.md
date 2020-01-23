@@ -1,9 +1,11 @@
-#Git Course
+# Git Course
 
 Este é um repositório teste para aprender como o git e o github funcionam
 
 * [Comandos básicos](#comandos-básicos)
 * [Indicadores](#indicadores)
+  - [Linhas](#linhas)
+  - [Arquivos](#arquivos)
 * [Logs](#logs)
 * [Diff](#diff)
 * [Desfazendo Coisas](#desfazendo-coisas)
@@ -35,13 +37,13 @@ git commit -am "Para adicionar todos os arquivos e dar commit"
 
 ## Indicadores
 
-#### Linhas
+### Linhas
 
 **Verde**         - Linha adicionada
 **Azul**          - Linha modificada
 **Seta vermelha** - Linha apagada
 
-#### Arquivos
+### Arquivos
 
 **U** - Untracked (não foi adicionado ainda)
 **A** - Added (adicionado mas não commitado)
