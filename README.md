@@ -13,6 +13,8 @@ Este é um repositório teste para aprender como o git e o github funcionam
 * [Repositório Remoto](#repositório-remoto)
 * [Fork](#fork)
 * [Branchs](#branchs)
+* [Merge](#merge)
+* [Rebase](#rebase)
 
 ## Comandos básicos
 
@@ -199,17 +201,17 @@ git merge <branch a ser mesclado>
 Pros   | Contras
 :----: | :-----:
 Não destroi commits | Cria um commit extra  
-Deixa o histórico poluído
+| Deixa o histórico poluído
 
 ## Rebase
 
 Move os commits para o branch de destino
 
-Pros   | Contras
-:----: | :-----:
-Evita commits extras  
-Histórico linear | Perde a ordem cronológica
-
 ```
 git rebase <branch a ser mesclado>
 ```
+
+Pros   | Contras
+:----: | :-----:
+Evita commits extras | Perde a ordem cronológica
+Histórico linear 
