@@ -15,6 +15,9 @@ Este é um repositório teste para aprender como o git e o github funcionam
 * [Branchs](#branchs)
 * [Merge](#merge)
 * [Rebase](#rebase)
+* [Stash](#stash)
+
+Para visualisar todos os tipos de formatação no markdown, acesse esse [link](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 
 ## Comandos básicos
 
@@ -53,8 +56,6 @@ git commit -am "Para adicionar todos os arquivos e dar commit"
 **U** - Untracked (não foi adicionado ainda)  
 **A** - Added (adicionado mas não commitado)  
 **M** - Modified (commitado e modificado)  
-
-Para visualisar todos os tipos de formatação no markdown, acesse esse [link](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 
 ## Logs
 
@@ -215,3 +216,42 @@ Pros   | Contras
 :----: | :-----:
 Evita commits extras | Perde a ordem cronológica
 Histórico linear |
+
+## Stash
+
+O git stash serve para armazenar mudanças em progresso sem ter que dar commit 
+
+```
+git stash
+```
+
+Para aplicar as mudanças armazenadas, usa-se
+```
+git stash aply
+```
+
+Para listar as mudanças, utilizar
+```
+git stash list
+```
+
+Para limpar todos os stashs armazenados, usar
+```
+git stash clear
+```
+
+## Alias
+
+Para criar um alias de comando, usa-se
+```
+git config --global alias.<alias> <comando>
+```
+
+Assim, ao invés de usar `git <comando>`, usa-se `git <alias>`
+
+## Tags
+
+A tag pode ser usado para criar uma versão, por exemplo
+```
+git tag -a <tag> -m "<mensagem>"
+```
