@@ -192,6 +192,10 @@ git branch -D <nome do branch>
 
 O merge une duas branchs diferentes criando um novo commit e mantendo as anteriores
 
+```
+git merge <branch a ser mesclado>
+```
+
 Pros   | Contras
 :----: | :-----:
 Não destroi commits | Cria um commit extra  
@@ -205,3 +209,7 @@ Pros   | Contras
 :----: | :-----:
 Evita commits extras  
 Histórico linear | Perde a ordem cronológica
+
+```
+git rebase <branch a ser mesclado>
+```
