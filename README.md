@@ -201,7 +201,7 @@ git merge <branch a ser mesclado>
 Pros   | Contras
 :----: | :-----:
 Não destroi commits | Cria um commit extra  
-| Deixa o histórico poluído
+ | Deixa o histórico poluído
 
 ## Rebase
 
