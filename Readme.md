@@ -2,10 +2,12 @@
 
 Este é um repositório teste para aprender como o git e o github funcionam
 
-[Comandos básicos](#comandos-básicos)
-[Indicadores](#indicadores)
-[Logs](#logs)
-[Diff](#diff)
+* [Comandos básicos](#comandos-básicos)
+* [Indicadores](#indicadores)
+* [Logs](#logs)
+* [Diff](#diff)
+* [Desfazendo Coisas](#desfazendo-coisas)
+  - [Desfazendo um Commit](#desfazendo-um-commit)
 
 ##Comandos básicos
 
@@ -16,7 +18,7 @@ git init
 
 Adicionar um arquivo
 ```
-git add [nome do arquivo]
+git add <nome do arquivo>
 git add .
 ```
 
@@ -27,7 +29,8 @@ git status
 
 Dar um commit 
 ```
-git commit -m "Mensagem do que foi alterado"
+git commit -m "Para apenas dar um commit"
+git commit -am "Para adicionar todos os arquivos e dar commit"
 ```
 
 ##Indicadores
@@ -80,12 +83,12 @@ git log --graph
 
 Para visualisar detalhes de uma commit, usar
 ```
-git show [hash do commit]
+git show <hash do commit>
 ```
 
 ##Diff
 
-O diff mostra as diferenças entre os arquivos do último commit e os modificados
+O diff mostra as diferenças entre os arquivos do último commit e os unstageds
 ```
 git diff
 ```
@@ -93,5 +96,34 @@ git diff
 Para listar somente os nomes dos arquivos modificados, usar
 ```
 git diff --name-only
+```
+
+##Desfazendo coisas
+
+Para desfazer as modificações de um arquivo unstaged, voltando ele para o estado do último commit, usa-se
+```
+git checkout <nome do arquivo>
+```
+
+Para dar unstaged num arquivo staged, basta usar
+```
+git reset HEAD <nome do arquivo>
+```
+
+###Desfazendo um commit
+
+Para apenas desfazer o commit e deixar os arquivos intactos e em staged, pronto para fazer o commit novamente, usar
+```
+git reset --soft <hash do commit anterior>
+```
+
+Para desfazer o commit e voltar os arquivos para unstaged, usa-se
+```
+git reset --mixed <hash do commit anterior>
+```
+
+Para desfazer o commit e todas as alterações dos arquivos, utilizar
+```
+git reset --hard <hash do commit anterior>
 ```
 
