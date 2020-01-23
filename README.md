@@ -18,6 +18,8 @@ Este é um repositório teste para aprender como o git e o github funcionam
 * [Merge](#merge)
 * [Rebase](#rebase)
 * [Stash](#stash)
+* [Alias](#alias)
+* [Tags](#tags)
 
 Para visualisar todos os tipos de formatação no markdown, acesse esse [link](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 
