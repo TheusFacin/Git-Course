@@ -12,6 +12,7 @@ Este é um repositório teste para aprender como o git e o github funcionam
   - [Desfazendo um Commit](#desfazendo-um-commit)
 * [Repositório Remoto](#repositório-remoto)
 * [Fork](#fork)
+* [Branchs](#branchs)
 
 ## Comandos básicos
 
@@ -176,3 +177,31 @@ Para verificar os branchs existentes, usar
 ```
 git branch
 ```
+
+Para navegar entre os branchs, utilizar
+```
+git checkout <nome do branch>
+```
+
+Para apagar um branch, usa-se
+```
+git branch -D <nome do branch>
+```
+
+## Merge
+
+O merge une duas branchs diferentes criando um novo commit e mantendo as anteriores
+
+Pros   | Contras
+:----: | :-----:
+Não destroi commits | Cria um commit extra  
+Deixa o histórico poluído
+
+## Rebase
+
+Move os commits para o branch de destino
+
+Pros   | Contras
+:----: | :-----:
+Evita commits extras  
+Histórico linear | Perde a ordem cronológica
