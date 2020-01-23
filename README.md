@@ -10,7 +10,9 @@ Este é um repositório teste para aprender como o git e o github funcionam
 * [Diff](#diff)
 * [Desfazendo Coisas](#desfazendo-coisas)
   - [Desfazendo um Commit](#desfazendo-um-commit)
+  - [Revert](#revert)
 * [Repositório Remoto](#repositório-remoto)
+  - [Apagando remotamente](#apagando-remotamente)
 * [Fork](#fork)
 * [Branchs](#branchs)
 * [Merge](#merge)
@@ -135,6 +137,17 @@ Para desfazer o commit e todas as alterações dos arquivos, utilizar
 git reset --hard <hash do commit anterior>
 ```
 
+### Revert
+
+O revert serve para criar um novo commit revertendo as mudanças de um commit anterior
+
+Por exemplo, digamos que acabamos de dar um commit e ele está sendo responsável por erros em produção, para voltarmos ao código anterior, sem apagar esse commit, usamos
+```
+git reset <hash do commit a ser revertido>
+```
+
+Assim, ele cria um novo commit sem as alterções desse selecionado
+
 ## Repositório remoto
 
 Para linkar com um repositório do GitHub, basta usar os seguintes comandos
@@ -161,6 +174,17 @@ git remote
 Para clonar um repositório para a máquina, usar
 ```
 git clone <endereço do repositório> <diretório alvo>
+```
+### Apagando remotamente
+
+Para apagar uma branch num repositório remoto, usa-se
+```
+git push origin :<nome da branch>
+```
+
+A mesma coisa para tags
+```
+git push origin :<nome da tag>
 ```
 
 ## Fork
@@ -254,4 +278,9 @@ Assim, ao invés de usar `git <comando>`, usa-se `git <alias>`
 A tag pode ser usado para criar uma versão, por exemplo
 ```
 git tag -a <tag> -m "<mensagem>"
+```
+
+Para apagar a tag, usa-se
+```
+git tag -d <tag>
 ```
