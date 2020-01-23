@@ -2,6 +2,11 @@
 
 Este é um repositório teste para aprender como o git e o github funcionam
 
+[Comandos básicos](#comandos-básicos)
+[Indicadores](#indicadores)
+[Logs](#logs)
+[Diff](#diff)
+
 ##Comandos básicos
 
 Iniciar um repositório
@@ -25,13 +30,15 @@ Dar um commit
 git commit -m "Mensagem do que foi alterado"
 ```
 
-##Indicadores do lado das linhas:
+##Indicadores
+
+####Linhas
 
 **Verde**         - Linha adicionada
 **Azul**          - Linha modificada
 **Seta vermelha** - Linha apagada
 
-##Indicadores do lado do nome do arquivo:
+####Arquivos
 
 **U** - Untracked (não foi adicionado ainda)
 **A** - Added (adicionado mas não commitado)
@@ -75,3 +82,16 @@ Para visualisar detalhes de uma commit, usar
 ```
 git show [hash do commit]
 ```
+
+##Diff
+
+O diff mostra as diferenças entre os arquivos do último commit e os modificados
+```
+git diff
+```
+
+Para listar somente os nomes dos arquivos modificados, usar
+```
+git diff --name-only
+```
+
