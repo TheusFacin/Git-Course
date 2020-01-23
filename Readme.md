@@ -127,3 +127,15 @@ Para desfazer o commit e todas as alterações dos arquivos, utilizar
 git reset --hard <hash do commit anterior>
 ```
 
+#Repositório remoto
+
+Para linkar com um repositório do GitHub, basta usar os seguintes comandos
+```
+git remote add origin <endereço do repositório>
+git push -u origin master
+```
+
+Para verificar os repositórios remotos conectados, usa-se
+```
+git remote
+```
