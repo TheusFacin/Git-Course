@@ -9,7 +9,7 @@ Este é um repositório teste para aprender como o git e o github funcionam
 * [Desfazendo Coisas](#desfazendo-coisas)
   - [Desfazendo um Commit](#desfazendo-um-commit)
 
-##Comandos básicos
+## Comandos básicos
 
 Iniciar um repositório
 ```
@@ -33,15 +33,15 @@ git commit -m "Para apenas dar um commit"
 git commit -am "Para adicionar todos os arquivos e dar commit"
 ```
 
-##Indicadores
+## Indicadores
 
-####Linhas
+#### Linhas
 
 **Verde**         - Linha adicionada
 **Azul**          - Linha modificada
 **Seta vermelha** - Linha apagada
 
-####Arquivos
+#### Arquivos
 
 **U** - Untracked (não foi adicionado ainda)
 **A** - Added (adicionado mas não commitado)
@@ -49,7 +49,7 @@ git commit -am "Para adicionar todos os arquivos e dar commit"
 
 Para visualisar todos os tipos de formatação no markdown, acesse esse [link](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 
-##Logs
+## Logs
 
 Para dar um log mostrando cada commit, o autor, a data e a mensagem, basta usar
 ```
@@ -86,7 +86,7 @@ Para visualisar detalhes de uma commit, usar
 git show <hash do commit>
 ```
 
-##Diff
+## Diff
 
 O diff mostra as diferenças entre os arquivos do último commit e os unstageds
 ```
@@ -98,7 +98,7 @@ Para listar somente os nomes dos arquivos modificados, usar
 git diff --name-only
 ```
 
-##Desfazendo coisas
+## Desfazendo coisas
 
 Para desfazer as modificações de um arquivo unstaged, voltando ele para o estado do último commit, usa-se
 ```
@@ -110,7 +110,7 @@ Para dar unstaged num arquivo staged, basta usar
 git reset HEAD <nome do arquivo>
 ```
 
-###Desfazendo um commit
+### Desfazendo um commit
 
 Para apenas desfazer o commit e deixar os arquivos intactos e em staged, pronto para fazer o commit novamente, usar
 ```
@@ -127,7 +127,7 @@ Para desfazer o commit e todas as alterações dos arquivos, utilizar
 git reset --hard <hash do commit anterior>
 ```
 
-#Repositório remoto
+# Repositório remoto
 
 Para linkar com um repositório do GitHub, basta usar os seguintes comandos
 ```
