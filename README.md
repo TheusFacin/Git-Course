@@ -10,6 +10,8 @@ Este é um repositório teste para aprender como o git e o github funcionam
 * [Diff](#diff)
 * [Desfazendo Coisas](#desfazendo-coisas)
   - [Desfazendo um Commit](#desfazendo-um-commit)
+* [Repositório Remoto](#repositório-remoto)
+* [Fork](#fork)
 
 ## Comandos básicos
 
