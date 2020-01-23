@@ -137,7 +137,28 @@ git remote add origin <endereço do repositório>
 git push -u origin master
 ```
 
+A partir daí é só usar
+```
+git push
+```
+
+Para baixar a última versão do repositório, utilizar
+```
+git pull
+```
+
 Para verificar os repositórios remotos conectados, usa-se
 ```
 git remote
 ```
+
+Para clonar um repositório para a máquina, usar
+```
+git clone <endereço do repositório> <diretório alvo>
+```
+
+## Fork
+
+O fork serve para trabalhar em um repositório de outra pessoa ou organização e depois enviar um pull request
+
+Para isso deve-se acessar o repositório e clicar no botão fork
